@@ -15,7 +15,7 @@
 .menu-items > a {
     color: var(--accent-color);
     font-weight: bold;
-    text-decoration: none;
+    
     text-decoration-color: var(--accent-color);
 }
 
