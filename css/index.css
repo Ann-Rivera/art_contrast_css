@@ -168,7 +168,7 @@ main article div .event-text {
 }
 
 main div .events-workshop {
-    text-align: center;
+    
     letter-spacing: 1.4px;
 }
 
@@ -196,28 +196,22 @@ main div .date {
     cursor: pointer;
 }
 
-@media (min-width: 540px) {
-    .events-workshop {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        align-items: center;
-        margin: auto;
-    }
-}
 
-@media (min-width: 740px) {
+.events-workshop {
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        
+    }
+
+/* @media (min-width: 740px) {
     .events-workshop {
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
+        
     }
 }
 
 @media (min-width: 980px) {
-    .events-workshop {
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 5px;
-        align-items: center;
-        margin: auto; 
+    .events-workshop 
+        
     }
-}
+} */
