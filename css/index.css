@@ -201,21 +201,23 @@ main div .date {
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
+        align-items: center;
+        margin: auto;
     }
 }
 
 @media (min-width: 740px) {
     .events-workshop {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        justify-items: center;
+        align-items: center;
     }
 }
 
 @media (min-width: 980px) {
     .events-workshop {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+        align-items: center;
+        margin: auto; 
     }
 }
