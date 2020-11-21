@@ -28,6 +28,14 @@ header nav .logo {
     letter-spacing: 3.18px;
 }
 
+header nav .clock {
+    font-family:'Montserrat', sans-serif; 
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+}
+
 @media (min-width: 750px) {
 
     header nav .menu-items {
@@ -65,7 +73,7 @@ header nav .menu-items a {
 }
 
 header .banner {
-    background-image: url(../img/head-1.jpg);
+    /* background-image: url(../img/head-1.jpg); */
     min-height: 1000px;
     background-size: cover;
     background-position: center;
@@ -204,14 +212,3 @@ main div .date {
         
     }
 
-/* @media (min-width: 740px) {
-    .events-workshop {
-        
-    }
-}
-
-@media (min-width: 980px) {
-    .events-workshop 
-        
-    }
-} */
