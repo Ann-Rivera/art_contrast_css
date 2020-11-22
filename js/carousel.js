@@ -1,5 +1,4 @@
 const images = [
-  'img/carousel-1.jpg',
   'img/carousel-2.jpg',
   'img/carousel-3.jpg',
   'img/carousel-4.jpg',
@@ -18,6 +17,11 @@ function back() {
   showSlide(currentIdx);
 }
 document.querySelector('.carousel .btn-back').addEventListener('click', back);
+function next() {
+  currentIdx = ++currentIdx < 0 ? images.length - 1 : currentIdx;
+  showSlide(currentIdx);
+}
+  document.querySelector('.carousel .btn-next').addEventListener('click', next);
 function showSlide(idx) {
   document.querySelector('.carousel img').src = images[idx];
 }
