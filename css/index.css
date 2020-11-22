@@ -73,7 +73,7 @@ header nav .menu-items a {
 }
 
 header .banner {
-    /* background-image: url(../img/head-1.jpg); */
+    background-image: url(../img/head-1.jpg);
     min-height: 1000px;
     background-size: cover;
     background-position: center;
@@ -81,19 +81,6 @@ header .banner {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-.banner {
-    position: relative;
-}
-
-.banner::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-image: url(../img/head-1.jpg);
-    filter: brightness(50%)
 }
 
 header .banner h1 {
@@ -208,7 +195,57 @@ main div .date {
 .events-workshop {
         display: flex;
         justify-content:center;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;  
     }
+    
+.date {
+    margin-right: 40px;
+}
 
+.number {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: black;
+    margin: 10px;
+}
+
+.month {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px;
+}
+
+.description{
+    margin: 10px;
+}
+
+.event {
+    text-align: left;
+}
+
+    @media (min-width: 700px) {
+        .date {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    }
+    
+    @media (min-width: 700px) {
+      .event {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+      }
+    }
+    
+    @media (min-width: 800px) {
+      .info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
