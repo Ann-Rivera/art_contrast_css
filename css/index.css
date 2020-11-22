@@ -194,7 +194,7 @@ main div .date {
     cursor: pointer;
 }
 
-    @media (min-width: 700px) {
+@media (min-width: 700px) {
         .date {
         display: flex;
         align-items: center;
@@ -202,7 +202,7 @@ main div .date {
         }
     }
     
-    @media (min-width: 700px) {
+@media (min-width: 700px) {
       .event {
         display: flex;
         align-items: center;
@@ -219,28 +219,35 @@ main div .date {
         margin-right: 30px;
       }
       .description {
-        margin: 50px, 30px;
+        display: flex;
+        margin: 70px 30px;
+        align-items: center;
+        flex-direction: column;
+        text-align: left;
       }
       .time{
+        display: flex;
         margin-right: 50px;
       }
 
       .date {
+        display: flex;
         text-align: left;
       }
-
-      .event-name {
-          margin-top: 60px;
+      .event-name{
+          display: flex;
+          text-align: left;
       }
     }
     
 .events-workshop {
-        display: flex;
-        justify-content:center;
-        flex-wrap: wrap;  
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;  
     }
     
 .date {
+    text-align: center;
     margin-right: 40px;
 }
 
@@ -266,12 +273,19 @@ main article .event {
 }
 
 main article .description {
-    margin-right: 20px;
+    line-height: 30px;
+    align-items: center;
+    align-content: center;
     letter-spacing: 5px;
+}
+
+main article spain {
+    font-weight: bold;
 }
 
 main article div .time {
     font-family: 'Raleway', sans-serif;
+    text-align: center;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 3px;
@@ -279,6 +293,7 @@ main article div .time {
 
 .event-name {
     font-family: 'Raleway', sans-serif;
+    margin-top: 45px;
     font-size: 12px;
     font-weight: 600;
 }
