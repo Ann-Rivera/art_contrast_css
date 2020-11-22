@@ -135,6 +135,9 @@ h2 {
 }
 
 h3 {
+    display: block;
+    text-align: center;
+    margin: 55px 25px 25px 25px;
     color: black
 }
 
@@ -213,18 +216,19 @@ main div .date {
     
 @media (min-width: 800px) {
       .info {
-        display: flex;
+       text-align: left; 
+       display: flex;
         align-items: center;
-        text-align: left;
         margin-right: 30px;
       }
       .description {
-        display: flex;
+        display: block;
         margin: 70px 30px;
         align-items: center;
         flex-direction: column;
         text-align: left;
       }
+
       .time{
         display: flex;
         margin-right: 50px;
@@ -293,7 +297,30 @@ main article div .time {
 
 .event-name {
     font-family: 'Raleway', sans-serif;
-    margin-top: 45px;
+    margin-top: 25px;
     font-size: 12px;
     font-weight: 600;
 }
+
+.btn-all-events {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.6em 3.6em;
+    margin-top: 20px;
+    border: 0.2em solid rgb(229, 229, 229);
+    font-size: 11px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-align: centre;
+    transition: all 0.7s;
+    letter-spacing: 3px;
+    background-color: transparent;
+}
+
+.btn-all-events:hover {
+    color: rgb(0, 0, 0);
+    background-color:  rgb(229, 229, 229);
+    cursor: pointer;
+}
+
