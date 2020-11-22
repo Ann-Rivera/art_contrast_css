@@ -14,7 +14,7 @@
 }
 
 body {
-    max-width: 980px;
+    max-width: 1080px;
     margin: auto;
 }
 
@@ -91,6 +91,7 @@ header .banner h1 {
     letter-spacing: 5.2px;
     color: rgb(255, 255, 255);
     text-align: center;
+    margin: 25px 25px;
 }
 
 
@@ -153,7 +154,7 @@ button {
     border: 1px solid black;
 }
 
-main article .event {
+main article .event-h3 {
     text-align: center;
     margin: 55px 25px 25px 25px;
 }
@@ -175,13 +176,15 @@ main div .date {
 
 .btn-registration {
     position: relative;
-    padding: 0.35em 1.2em;
+    padding: 1.3em 3.5em;
     margin-top: 20px;
-    border: 0.1em solid rgb(0, 0, 0);
+    border: 0.2em solid rgb(0, 0, 0);
     font-size: 11px;
+    font-weight: 600;
     color: rgb(0, 0, 0);
     text-align: centre;
     transition: all 0.7s;
+    letter-spacing: 3px;
     background-color: transparent;
 }
 
@@ -191,7 +194,46 @@ main div .date {
     cursor: pointer;
 }
 
+    @media (min-width: 700px) {
+        .date {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    }
+    
+    @media (min-width: 700px) {
+      .event {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex: 1;
+      }
+    }
+    
+@media (min-width: 800px) {
+      .info {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        margin-right: 30px;
+      }
+      .description {
+        margin: 50px, 30px;
+      }
+      .time{
+        margin-right: 50px;
+      }
 
+      .date {
+        text-align: left;
+      }
+
+      .event-name {
+          margin-top: 60px;
+      }
+    }
+    
 .events-workshop {
         display: flex;
         justify-content:center;
@@ -217,35 +259,26 @@ main div .date {
     padding: 5px;
 }
 
-.description{
-    margin: 10px;
+main article .event {
+    text-align: center;
+    margin-top:60px 30px;
+    padding:10px 5px;
 }
 
-.event {
-    text-align: left;
+main article .description {
+    margin-right: 20px;
+    letter-spacing: 5px;
 }
 
-    @media (min-width: 700px) {
-        .date {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        }
-    }
-    
-    @media (min-width: 700px) {
-      .event {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: 1;
-      }
-    }
-    
-    @media (min-width: 800px) {
-      .info {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
+main article div .time {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.event-name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
