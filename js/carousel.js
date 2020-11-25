@@ -18,7 +18,7 @@ function back() {
 }
 document.querySelector('.carousel .btn-back').addEventListener('click', back);
 function next() {
-  currentIdx = ++currentIdx < 0 ? images.length - 1 : currentIdx;
+  currentIdx = ++currentIdx > images.length - 1 ? 0: currentIdx;
   showSlide(currentIdx);
 }
   document.querySelector('.carousel .btn-next').addEventListener('click', next);
