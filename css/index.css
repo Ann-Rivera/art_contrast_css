@@ -327,12 +327,7 @@ main article div .btn-all-events:hover {
 
 /* --------------------------HALL - RENTAL------------------------ */
 
-.image-hall {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    
-}
+
 
 .parameter-hall {
     display: flex;
@@ -380,20 +375,7 @@ main article div .btn-all-events:hover {
     cursor: pointer;
 }
 
-@media (min-width: 700px) {
-    .hall-rental {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .image-hall {
-        object-fit: cover
-    }
-    .description-hall {
-         width: 30%;
-    }
-}
-
+/* ----------------------PORTFOLIO-------------------------- */
 .portfolio {
     display: block;
     text-align: center;
