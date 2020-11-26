@@ -18,6 +18,8 @@ body {
     margin: auto;
 }
 
+/* ----------------------------HEADER----------------------------- */
+
 header nav .logo {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
@@ -146,9 +148,6 @@ h4 {
     color: black;
 }
 
-img {
-    max-width: 400px;
-}
 
 button {
     font-family: 'Montserrat', sans-serif;
@@ -156,6 +155,8 @@ button {
     font-size: 11px;
     border: 1px solid black;
 }
+
+/* ---------------------EVENTS----------------------- */
 
 main article .event-h3 {
     text-align: center;
@@ -324,13 +325,16 @@ main article div .btn-all-events:hover {
     cursor: pointer;
 }
 
-main article div .image-hall {
+/* --------------------------HALL - RENTAL------------------------ */
+
+.image-hall {
     position: relative;
     display: flex;
     justify-content: center;
+    
 }
 
-main article div .parameter-hall {
+.parameter-hall {
     display: flex;
     text-align: left;
   }
@@ -383,10 +387,10 @@ main article div .parameter-hall {
         align-items: center;
     }
     .image-hall {
-        display: block;
-        position: relative;
-        height: 290px;
-        width: 756px;
+        object-fit: cover
+    }
+    .description-hall {
+         width: 30%;
     }
 }
 
