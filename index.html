@@ -13,9 +13,10 @@
         <nav>
             <p class="logo">art_contrast_studio</p>
             <div class="clock"></div>
+            <label class="burger-icon" for="burger-checkbox">≣</label>
+            <input type="checkbox" id="burger-checkbox">
             <div class="menu-items">
                 <a href="#Аренда-зала">Залы</a>
-                <a href="#Календарь">Календарь</a>
                 <a href="#Портфолио">Портфолио</a>
                 <a href="#События">События</a>
                 <a href="#Контакты">Контакты</a>
@@ -39,7 +40,7 @@
     </header>
     <main>
     <article id="События">
-        <h3 class="event-h3">- События -</h3>
+        <h3 class="section">- События -</h3>
             <div>
                 <p class="event-text"> Мы регулярно проводим различные мероприятия для фотографов.</p>
                     <article class="events-workshop">
@@ -78,7 +79,7 @@
             </div>
     </article>
         <article id="Аренда-зала">
-        <h3>- Аренда зала -</h3>
+        <h3  class="section">- Аренда зала -</h3>
         <div class="container-hall-rental">
             <div class="hall-rental">
               <div class="image-hall">
@@ -130,31 +131,8 @@
                    </div>
                 </div>
         </article>
-        <section id="Календарь">
-            <h3>Календарь</h3>
-                <div class="calendar-table">
-                    <table>
-                        <caption>Пн 21/10</caption>
-                        <tr><td>5-6 p.m.</td><td>Booked</td></tr>
-                        <tr><td>6-7 p.m.</td><td>Free time</td></tr>
-                        <tr><td>7-8 p.m.</td><td>Free time</td></tr>
-                        <tr><td>8-9 p.m.</td><td>Booked</td></tr>
-                    </table>
-                </div> 
-                <div class="calendar-table">
-                    <table>
-                        <caption>Вт 22/10</caption>
-                        <tr><td>5-6 p.m.</td><td>Booked</td></tr>
-                        <tr><td>6-7 p.m.</td><td>Free time</td></tr>
-                        <tr><td>7-8 p.m.</td><td>Free time</td></tr>
-                        <tr><td>8-9 p.m.</td><td>Booked</td></tr>
-                    </table>
-                    <h3>Выберите свободное время из графика и забронируйте студию!</h3>
-                    <button class="btn-registration">ЗАБРОНИРОВАТЬ</button>
-                </div> 
-        </section>
         <section id="Портфолио">
-            <h3>Портфолио</h3>
+            <h3 class="section">- Портфолио -</h3>
                 <div>
                     <div class="portfolio">Фото сделанные в наших залах</div>
                     <div class="carousel">
@@ -162,14 +140,15 @@
                         <button class="btn-back"> back </button>
                         <button class="btn-next"> next </button>
                     </div>
-                </div>  
-        </section>
-        <div>
+                </div>
+        <div class="baner-portfolio">
+          <!-- <img src="img/contact-us.jpg" alt="photo girl"> -->
             <h3>Позвольте нам сохранить драгоценные моменты вашей жизни!</h3>
-                <button class="btn-registration">СВЯЗАТЬСЯ С НАМИ</button>
+                <button class="btn-contact-us">СВЯЗАТЬСЯ С НАМИ</button>
         </div>
+        </section>
         <section class="upcoming-events">
-            <h3>Предстоящие события</h3>
+            <h3 class="section">- Предстоящие события -</h3>
             <article class="events-workshop">
                 <div class="event">
                         <div class="date">
@@ -205,9 +184,10 @@
         </section>
         <section id="Контакты">
                 <div class="contact-form">
-                    <h3>- Контакты -</h3>
+                  <div class="contact-container">
+                    <h3 class="section">- Контакты -</h3>
                     <div class="description-contact">Хотите арендовать один из залов в нашей студии или необходима дополнительная информация? Заполните форму и мы с вами свяжемся!</div>
-                        <div class="contact">
+                              <div class="contact">
                                     <div class="parameter-contact">
                                         <div class="parameter-contact-black">Адресс:</div>
                                         <div class="parameter-contact-gray">г. Днепр<br>ул. Маршала Малиновского 124</div>
@@ -220,7 +200,8 @@
                                       <div class="parameter-contact-black">Контакты:</div>
                                       <div class="parameter-contact-gray">+380931241244 <br> <a href="https://www.instagram.com/art_contrast_studio/">https://www.instagram.com/art_contrast_studio/</a></div>
                                     </div>
-                        </div>
+                             </div>
+                  </div>
                         <div class="form-container">
                           <form id="form">
                               <input type="text" class="form-cell" placeholder="Имя" required name="user-name"><br>
@@ -239,12 +220,15 @@
 </body>
     <footer>
          <div class="menu">
+           <div class="footer-logo">
             <h2>art_contrast_studio</h2>
+           </div>
+            <div class="menu-footer">
                 <a href="#Аренда-зала">Залы</a>
-                <a href="#Календарь">Календарь</a>
                 <a href="#Портфолио">Портфолио</a>
                 <a href="#События">События</a>
                 <a href="#Контакты">Контакты</a>
+            </div>
         </div>
     </footer>
 </html>

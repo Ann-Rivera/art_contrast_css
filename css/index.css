@@ -9,6 +9,7 @@
 :root {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
+    scroll-behavior: smooth;
     --main-color: black; 
     --accent-color: rgb(106, 106, 106);
 }
@@ -30,6 +31,24 @@ header nav .logo {
     letter-spacing: 3.18px;
 }
 
+#burger-checkbox {
+    display: none;
+}
+
+.burger-icon {
+    font-size: 30px;
+    color: black;
+    margin: 95%;
+}
+
+header nav .menu-items {
+    display: none;
+}
+
+header nav input:checked ~ .menu-items {
+    display: block;
+}
+
 header nav .clock {
     font-family:'Montserrat', sans-serif; 
     font-size: 20px;
@@ -40,10 +59,19 @@ header nav .clock {
 
 @media (min-width: 750px) {
 
+    .burger-icon {
+        display:none;
+    }
+    
+
     header nav .menu-items {
         display: flex;
         width: 57%;
         margin: auto;
+    }
+    
+    header nav input:checked ~ .menu-items {
+        display: flex;
     }
 
     header nav .menu-items a {
@@ -60,6 +88,7 @@ header nav .menu-items a {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     font-weight: 600;
+    letter-spacing: 1px;
     margin: 25px 25px 25px 25px;
 }
 
@@ -141,6 +170,13 @@ h3 {
     text-align: center;
     margin: 55px 25px 25px 25px;
     color: black
+}
+
+.section {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 3px;
 }
 
 h4 {
@@ -472,6 +508,37 @@ main article div .btn-all-events:hover {
     cursor: pointer;
 }
 
+/* --------baner-portfolio---------- */
+.baner-portfolio {
+    background-image: url(../img/contact-us.jpg);
+    background-attachment: fixed;
+    margin: 40px 20px;
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section .baner-portfolio h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    etter-spacing: 2px;
+    margin: 10px 70px;
+    text-align: left;
+}
+
+section .baner-portfolio .btn-contact-us {
+    display: block;
+    position: relative;
+    top: 40px; 
+    left: 20%;
+}
+
 /* ------------CONTACT-FORM------------------------ */
 /* -----contact----- */
 .description-contact {
@@ -528,7 +595,7 @@ main article div .btn-all-events:hover {
     background: linear-gradient(0deg, #6b6b6b 0%, #1F1E1D 100%);
     width: 330px;
     background-attachment:fixed;
-    background-position:center;
+    background-position: center;
     padding: 50px 40px;
     margin: 50px 10px;
 }
@@ -571,4 +638,66 @@ main article div .btn-all-events:hover {
     color: rgb(0, 0, 0);
     background-color:  rgb(255, 255, 255);
     cursor: pointer;
+}
+
+@media (min-width: 740px) {
+    .contact-form {
+        display: flex;
+    }
+}
+
+/* ----------------FOOTER---------------------- */
+footer .menu {
+    background-color: black;
+    padding: 50px 20px;
+    background-attachment:fixed;
+    background-position:center;
+}
+
+.footer-logo h2{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3.18px;
+    text-align: center;
+}
+
+.menu-footer a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 25px 15px;
+}
+
+.menu-footer > a {
+    color: var(--accent-color);
+    font-weight: bold;
+    text-decoration-color: var(--accent-color);
+}
+
+.menu-footer > a:hover {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+@media (min-width: 720px) {
+        footer .menu {
+            display: flex;
+            /* margin: auto; */
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer .menu .menu-footer  {
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+        flex: 1;
+        }  
 }
