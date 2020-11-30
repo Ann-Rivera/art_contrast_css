@@ -88,8 +88,8 @@ header .banner {
 header .banner h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 52px;
-    position: relative;
     font-weight: 400;
+    position: relative;
     letter-spacing: 5.2px;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -327,23 +327,30 @@ main article div .btn-all-events:hover {
 
 /* --------------------------HALL - RENTAL------------------------ */
 
+.image-hall img{
+    object-fit: cover;
+    width: 100%;   
+}
+
 .parameter-hall {
     display: flex;
     text-align: left;
   }
   
-.parameter-black-color {
-    color: rgb(0, 0, 0);
+.parameter-black-color div{
+    color: black;
     margin: 30px 30px;
-    line-height: 2.7em;
+    letter-spacing: 2px;
+    line-height: 2em;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
 }
 
-.parameter-gray-color {
+.parameter-gray-color div{
     margin: 30px 30px;
-    line-height: 2.7em;
+    line-height: 2em;
+    letter-spacing: 2px;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -351,6 +358,9 @@ main article div .btn-all-events:hover {
 
 .detailed-description-hall {
     margin: 10px 20px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .btn-to-book{
@@ -373,11 +383,27 @@ main article div .btn-all-events:hover {
     cursor: pointer;
 }
 
+@media (min-width: 700px) {
+    .hall-rental {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex: 1;
+    }
+    .image-hall {
+        width: 60%;
+    }
+
+    .description-hall {
+        width: 40%;
+    }
+}
+
 /* ----------------------PORTFOLIO-------------------------- */
 .portfolio {
     display: block;
     text-align: center;
-    margin: 55px 25px 25px 25px;
+    margin: 35px 25px 25px 25px;
 }
 .carousel {
     position: relative;
@@ -385,8 +411,25 @@ main article div .btn-all-events:hover {
     justify-content: center;
 }
 
+.carousel img {
+    width: 300px;
+}
+
+@media (min-width: 600px) {
+    .carousel img {
+        width: 400px;
+    }
+}
+
+@media (min-width: 700px) {
+    .carousel img {
+        width: 500px;
+    }
+}
+
 .btn-back {
     position: absolute;
+    display: block;
     top: calc(50% - 10px);
     left: 10px;
     padding: 5px 5px;
@@ -426,5 +469,106 @@ main article div .btn-all-events:hover {
 .btn-next:hover {
     color: rgb(255, 255, 255);
     background-color:  rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* ------------CONTACT-FORM------------------------ */
+/* -----contact----- */
+.description-contact {
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 520px) {
+    .parameter-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+   
+.parameter-contact-black {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    color: black;
+    line-height: 2em;
+    letter-spacing: 2px;
+    margin: 0 10px;
+  }
+  
+.parameter-contact-gray {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    margin: 0 10px;
+  }
+
+@media (min-width: 700px) {
+    .parameter-contact {
+        display: flex;
+    }
+    .parameter-contact-black {
+        flex: 0 0 200px;
+    }
+    
+    .parameter-contact-gray {
+        flex: 1 1 auto;
+    }
+}
+
+/* ------form------ */
+.form-container {
+    background: linear-gradient(0deg, #6b6b6b 0%, #1F1E1D 100%);
+    width: 330px;
+    background-attachment:fixed;
+    background-position:center;
+    padding: 50px 40px;
+    margin: 50px 10px;
+}
+
+.form-cell  {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 6px 50px;
+    width:200px;
+    padding:15px;
+    border: 2px;
+}
+
+.form-message {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 6px 50px;
+    width:200px;
+    padding:20px 15px;
+    border:2px;
+} 
+
+.btn-contact-us {
+    position: center;
+    padding: 1.3em 7em;
+    margin: 20px 50px;
+    border: 0.2em solid rgb(255, 255, 255);;
+    font-size: 7px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);;
+    text-align: centre;
+    transition: all 0.7s;
+    letter-spacing: 3px;
+    background-color: transparent;
+}
+
+.btn-contact-us:hover {
+    color: rgb(0, 0, 0);
+    background-color:  rgb(255, 255, 255);
     cursor: pointer;
 }

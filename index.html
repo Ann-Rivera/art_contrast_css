@@ -79,29 +79,31 @@
     </article>
         <article id="Аренда-зала">
         <h3>- Аренда зала -</h3>
-        <div class="hall-rental">
-            <div class="image-hall">
-              <img src="img/head-1.1.jpg" alt="hall loft">
-            </div>
-            <div class="description-hall">
-              <div class="parameter-hall">
-                <div class="parameter-black-color">
-                  <div>Зал:</div>
-                  <div>Площадь:</div>
-                  <div>Стоимость:</div>
-                </div>
-                <div class="parameter-gray-color">
-                  <div>LOFT</div>
-                  <div>72 м²</div>
-                  <div>450 грн/ч</div>
-                </div>
+        <div class="container-hall-rental">
+            <div class="hall-rental">
+              <div class="image-hall">
+                <img src="img/head-1.1.jpg" alt="hall loft">
               </div>
-              <div class="detailed-description-hall">
-                <div>Этот зал получился именно таким как мы хотели - большим, светлым и фактурным. Кирпичная стена, бетонный пол, три больших чёрных окна и уникальная мебель создают безграничное пространство для вашего творчества!! Он идеально подходит для портретных съёмок, свадеб и love story❤</div>
+              <div class="description-hall">
+                <div class="parameter-hall">
+                  <div class="parameter-black-color">
+                    <div>Зал:</div>
+                    <div>Площадь:</div>
+                    <div>Стоимость:</div>
+                  </div>
+                  <div class="parameter-gray-color">
+                    <div>LOFT</div>
+                    <div>72 м²</div>
+                    <div>450 грн/ч</div>
+                  </div>
+                </div>
+                <div class="detailed-description-hall">
+                  <div>Этот зал получился именно таким как мы хотели - большим, светлым и фактурным. Кирпичная стена, бетонный пол, три больших чёрных окна и уникальная мебель создают безграничное пространство для вашего творчества!! Он идеально подходит для портретных съёмок, свадеб и love story❤</div>
+                </div>
+                <button class="btn-to-book">ЗАБРОНИРОВАТЬ</button>
               </div>
-              <button class="btn-to-book">ЗАБРОНИРОВАТЬ</button>
             </div>
-        </div>
+          </div>
         <div class="container-hall-rental">
                 <div class="hall-rental">
                        <div class="image-hall">
@@ -201,31 +203,41 @@
                 </div>
         </article>     
         </section>
+        <section id="Контакты">
+                <div class="contact-form">
+                    <h3>- Контакты -</h3>
+                    <div class="description-contact">Хотите арендовать один из залов в нашей студии или необходима дополнительная информация? Заполните форму и мы с вами свяжемся!</div>
+                        <div class="contact">
+                                    <div class="parameter-contact">
+                                        <div class="parameter-contact-black">Адресс:</div>
+                                        <div class="parameter-contact-gray">г. Днепр<br>ул. Маршала Малиновского 124</div>
+                                    </div>
+                                    <div class="parameter-contact">
+                                      <div class="parameter-contact-black">Время работы:</div>
+                                      <div class="parameter-contact-gray">Понедельник - Воскресенье <br>24/7</div>
+                                    </div>
+                                    <div class="parameter-contact">
+                                      <div class="parameter-contact-black">Контакты:</div>
+                                      <div class="parameter-contact-gray">+380931241244 <br> <a href="https://www.instagram.com/art_contrast_studio/">https://www.instagram.com/art_contrast_studio/</a></div>
+                                    </div>
+                        </div>
+                        <div class="form-container">
+                          <form id="form">
+                              <input type="text" class="form-cell" placeholder="Имя" required name="user-name"><br>
+                              <input type="text" class="form-cell" placeholder="Телефон" required name="user-phone"><br>
+                              <input type="email" class="form-cell" placeholder="Enter your e-mail*" required name="user-email"><br>
+                              <input autocomplete="email" class="form-cell" placeholder="Email"><br>
+                              <textarea class="form-message" placeholder="Ведите ваше сообщение"></textarea><br>
+                              <button class=btn-contact-us>СВЯЖИТЕСЬ С НАМИ</button>
+                          </form>
+                        </div>
+                </div>
+        </section>
     </main>
     <script src="js/index.js"></script>
     <script src="js/carousel.js"></script>
 </body>
     <footer>
-        <div id="Контакты">
-            <h3>- Контакты -</h3>
-        </div>
-            <div class="footer">    
-                    <div>Хотите арендовать один из залов в нашей студии или необходима дополнительная информация? Заполните форму и мы с вами свяжемся!</div>
-                    <div>Адресс: г. Днепр ул. Маршала Малиновского 124</div>
-                    <div>Время работы: Понедельник - Воскресенье 24/7</div>
-                    <div>Контакты: +380931241244
-                        <a href="https://www.instagram.com/art_contrast_studio/">https://www.instagram.com/art_contrast_studio/</a>
-                    </div>
-           
-                    <form id="form">
-                        <input type="text" placeholder="Имя" required name="user-name"><br>
-                        <input type="text" placeholder="Телефон" required name="user-phone"><br>
-                        <input type="email" placeholder="Enter your e-mail*" required name="user-email"><br>
-                        <input autocomplete="email" placeholder="Email"><br>
-                        <textarea placeholder="Ведите ваше сообщение"></textarea><br>
-                        <button class=btn-contact-us>СВЯЖИТЕСЬ С НАМИ</button>
-                    </form>
-            </div>
          <div class="menu">
             <h2>art_contrast_studio</h2>
                 <a href="#Аренда-зала">Залы</a>
